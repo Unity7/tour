@@ -94,6 +94,7 @@ html {
   border-radius: 50%;
 }
 
+/* The Road Animation settings */
 .logo h1 span:nth-child(1) {
   animation: drop-letters 5s 0.1s infinite;
 }
@@ -140,3 +141,34 @@ html {
     transform: translateY(0);
   }
 }
+
+/* Baloon Animation Settings */
+.header-image {
+  width: 35%;
+  animation: image-float 150s infinite;
+}
+
+/* Baloon Animation Effect */
+@keyframes image-float {
+  0% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+  40% {
+    transform: translateZ(-500rem) translateX(150rem);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateZ(-1500rem) translateX(800rem);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translateZ(-50rem) translateX(100rem);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+}
+/* End of Baloon Animation Effect */
